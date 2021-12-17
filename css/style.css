@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 } 
 
 /* general */
@@ -54,6 +55,7 @@ aside{
     height: calc(100vh - 80px);
 }
 
+    /* aside logo */
 .logo{
     display: flex;
     height: 80px;
@@ -61,7 +63,37 @@ aside{
 }
 
 .logo img{
-    width: 60%;
+    width: 50%;
+}
+
+    /* aside actions */
+.actions{
+    margin-left:15px ;
+}   
+
+.act{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.act img{
+    width: 30px;
+    height: 30px;
+}
+
+.act.home span{
+    color: #fff;
+}
+
+.search.act span, .library.act span{
+    opacity: 0.5;
+    color: #fff;
+}
+
+.search.act img, .library.act img{
+    filter: opacity(0.5);
 }
 
 /* main */
