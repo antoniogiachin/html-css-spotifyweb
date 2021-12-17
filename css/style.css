@@ -86,7 +86,7 @@ aside .logo img{
 
     /* aside actions */
 aside .actions{
-    margin-left:15px ;
+    margin-left:2px ;
 }   
 
 .act{
@@ -94,11 +94,20 @@ aside .actions{
     align-items: center;
     gap: 10px;
     margin: 10px 0px;
+    padding: 0px 15px;
 }
 
 .act img{
     width: 30px;
     height: 30px;
+}
+
+.home.act{
+    border-left: 3px solid green;
+}
+
+.search.act, .library.act{
+    border: 3px solid transparent;
 }
 
 .search.act img, .library.act img{
@@ -108,9 +117,13 @@ aside .actions{
     /* aside playlist */
 aside .playlist{
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 2px;
     line-height: 38px;
     overflow-y:auto;
+}
+
+aside .playlist ul li{
+    padding: 0px 15px;
 }
 
 aside .playlist ul li .fas.fa-plus{
@@ -118,6 +131,9 @@ aside .playlist ul li .fas.fa-plus{
     padding: 10px;
     color: black;
 }
+
+    /* aside bottom actions */
+    
 /* main */
 main{
     width: 80vw;
