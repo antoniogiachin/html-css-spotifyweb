@@ -201,7 +201,8 @@ footer .ft-left, footer .ft-right{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 15px;
 }
 
 footer .ft-center{
