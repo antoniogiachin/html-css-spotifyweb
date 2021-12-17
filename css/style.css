@@ -4,6 +4,16 @@
     padding: 0;
 } 
 
+/* general */
+.flex{
+    display: inline-flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
 /* header */
 header{
     width: 80vw;
@@ -27,8 +37,8 @@ header .upgrade a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    padding: 10px 20px;
-    display: inline-block;
+    padding: 10px 20px; /*  aumenta area cliccabile  */
+    display: inline-block; /*  aumenta area cliccabile  */
 }
 
 
@@ -42,6 +52,16 @@ aside{
     top: 0;
     background-color: black;
     height: calc(100vh - 80px);
+}
+
+.logo{
+    display: flex;
+    height: 80px;
+    margin-left: 15px;
+}
+
+.logo img{
+    width: 60%;
 }
 
 /* main */
