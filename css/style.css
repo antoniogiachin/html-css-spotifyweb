@@ -15,6 +15,26 @@
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+}
+
+.span-little{
+    font-size: 0.9em;
+}
+
+.txt-uc{
+    text-transform: uppercase;
+}
+
+.cl-wh{
+    color: #fff;
+}
+
+.op-05{
+    opacity: 0.5;
+}
+
 /* header */
 header{
     width: 80vw;
@@ -36,8 +56,6 @@ header .upgrade{
 
 header .upgrade a{
     text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
     padding: 10px 20px; /*  aumenta area cliccabile  */
     display: inline-block; /*  aumenta area cliccabile  */
 }
@@ -56,18 +74,18 @@ aside{
 }
 
     /* aside logo */
-.logo{
+aside .logo{
     display: flex;
     height: 80px;
     margin-left: 15px;
 }
 
-.logo img{
+aside .logo img{
     width: 50%;
 }
 
     /* aside actions */
-.actions{
+aside .actions{
     margin-left:15px ;
 }   
 
@@ -83,19 +101,23 @@ aside{
     height: 30px;
 }
 
-.act.home span{
-    color: #fff;
-}
-
-.search.act span, .library.act span{
-    opacity: 0.5;
-    color: #fff;
-}
-
 .search.act img, .library.act img{
     filter: opacity(0.5);
 }
 
+    /* aside playlist */
+aside .playlist{
+    margin-top: 10px;
+    margin-left: 15px;
+    line-height: 38px;
+    overflow-y:auto;
+}
+
+aside .playlist ul li .fas.fa-plus{
+    background-color: #a3a3a3;
+    padding: 10px;
+    color: black;
+}
 /* main */
 main{
     width: 80vw;
