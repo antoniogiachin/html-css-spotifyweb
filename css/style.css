@@ -4,17 +4,37 @@
     padding: 0;
 } 
 
+/* header */
 header{
     width: 80vw;
     height: 80px;
+    line-height: 80px;
     position: fixed;
     top: 0;
     right: 0;
     background-color: brown;
-    
-    
+    text-align: right;
 }
 
+header .upgrade{
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+header .upgrade a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+
+
+
+/* aside */
 aside{
     width: 20vw;
     position: fixed;
@@ -24,6 +44,7 @@ aside{
     height: calc(100vh - 80px);
 }
 
+/* main */
 main{
     width: 80vw;
     height: calc(100vh - 80px);
@@ -34,15 +55,17 @@ main{
     right: 0;
     overflow-y: scroll;
 }
+
+/* footer */
 footer{
     height: 80px;
     width: 100vw;
     background-color: cornflowerblue;
     position: fixed;
     bottom: 0;
-
 }
 
+/* divs prove */
 .prova{
     height: 500px;
     width: 100%;
