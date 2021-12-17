@@ -3,3 +3,56 @@
     margin: 0;
     padding: 0;
 } 
+
+header{
+    width: 80vw;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: brown;
+    
+    
+}
+
+aside{
+    width: 20vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: black;
+    height: calc(100vh - 80px);
+}
+
+main{
+    width: 80vw;
+    height: calc(100vh - 80px);
+    margin: 80px 0px;
+    background-color: darkcyan;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+}
+footer{
+    height: 80px;
+    width: 100vw;
+    background-color: cornflowerblue;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.prova{
+    height: 500px;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+.prova2{
+    background-color: chocolate;
+}
+
+.prova3{
+    background-color: darkgray;
+}
