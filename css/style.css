@@ -133,7 +133,42 @@ aside .playlist ul li .fas.fa-plus{
 }
 
     /* aside bottom actions */
-    
+aside .actions-btm{
+    width: 90%;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    background-color: black;
+    z-index: 999;
+}
+
+aside .actions-btm img{
+    width: 15px;
+    height: 15px;
+}
+aside .actions-btm hr{
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+aside .actions-btm .profile{
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+aside .actions-btm .act-btm{
+    display: flex;
+    height: 10px;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0px;
+}
 /* main */
 main{
     width: 80vw;
