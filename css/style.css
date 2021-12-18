@@ -184,7 +184,7 @@ main{
 footer{
     height: 80px;
     width: 100vw;
-    background-color: cornflowerblue;
+    background-color: #292929;
     position: fixed;
     bottom: 0;
 
@@ -201,7 +201,6 @@ footer .ft-left, footer .ft-right{
 footer .ft-center{
     width: 60%;
     height: 100%;
-    background-color: green;
     line-height: 1.8em;
     padding: 5px 0px;
 }
@@ -250,31 +249,31 @@ footer .ft-center .player-info{
 footer .ft-center .player-info::after{
     content: "4:35";
     color: #fff;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 footer .ft-center .player-info::before{
     content: "0:25";
     color: #fff;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
-footer .ft-center .player-progression{
-    width: 75%;
+footer .ft-center .player-progression, footer .ft-right .vl-rocker{
+    width: 70%;
     height: 5px;
     border-radius: 20px;
-    background-color: #222;
+    background-color: #5a5a5a;
     position: relative;
 }
 
-footer .ft-center .player-progression .progression-bar{
+footer  .progression-bar{
     width: 20%;
     height: 100%;
     border-radius: 20px;
-    background-color: #a3a3a3;
+    background-color: #c1c1c1;
 }
 
-footer .ft-center .player-progression .progression-circle{
+footer .progression-circle{
     position: absolute;
     top: -2px;
     left: 19%;
@@ -284,7 +283,12 @@ footer .ft-center .player-progression .progression-circle{
     background-color: #fff;
 }
 
-
+    /* ft-left */
+footer .ft-right{
+    font-size: 0.8em;
+    color: #fff;
+    gap: 10px;
+}
 
 
 
