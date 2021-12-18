@@ -275,15 +275,16 @@ footer{
 }
 
 footer .ft-left, footer .ft-right{
-    width: 20%;
+    width: 15vw;
     height: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 0px 15px;
 }
 
+
 footer .ft-center{
-    width: 60%;
+    width: 70vw;
     height: 100%;
     line-height: 1.8em;
     padding: 5px 0px;
@@ -316,7 +317,7 @@ footer .ft-center .player-act{
     font-size: 1.2em;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 30px;
 }
 
 footer .ft-center .player-act .fa-play-circle{
@@ -324,7 +325,7 @@ footer .ft-center .player-act .fa-play-circle{
 }
 
 footer .ft-center .player-info{
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -341,7 +342,7 @@ footer .ft-center .player-info::before{
 }
 
 footer .ft-center .player-progression, footer .ft-right .vl-rocker{
-    width: 70%;
+    width: 65%;
     height: 5px;
     border-radius: 20px;
     background-color: #5a5a5a;
