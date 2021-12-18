@@ -27,24 +27,24 @@
     <aside class="flex-col">
 
         <!-- spotify logo -->
-        <div class="logo">
+        <div class="logo flex">
             <img src="img/logo.svg" alt="spot-logo">
         </div>
 
          <!-- aside actions -->
         <div class="actions">
 
-            <a  href="#" class="act home">
+            <a  href="#" class="act home flex">
                 <img src="img/home.svg" alt="home-act">
                 <span class="span-little cl-wh">Home</span>
             </a>
 
-            <a href="#" class="act search">
+            <a href="#" class="act search flex">
                 <img src="img/search.svg" alt="search-act">
                 <span class="span-little cl-wh op-05">Cerca</span>
             </a>
 
-            <a href="#" class="act library">
+            <a href="#" class="act library flex">
                 <img src="img/libreria.svg" alt="librart-act">
                 <span class="span-little cl-wh op-05">La tua libreria</span>
             </a>
@@ -77,14 +77,14 @@
         </div>
 
         <!-- aside bottom actions -->
-        <div class="actions-btm">
+        <div class="actions-btm flex-col">
 
-            <a class="act-btm" href="#">
+            <a class="act-btm flex" href="#">
                 <img src="img/download.svg" alt="download-app">
                 <span class="span-little cl-wh op-05">La tua libreria</span>
             </a>
             <hr>
-            <a class="act-btm" href="#">
+            <a class="act-btm flex" href="#">
                 <img class="profile" src="img/profile.svg" alt="download-app">
                 <span class="cl-wh">John Doe</span>
             </a>
@@ -106,16 +106,16 @@
     <!-- fine main -->
 
     <!-- inizio footer -->
-    <footer>
+    <footer class="flex">
 
-        <div class="ft-left">
-            <div class="song-player">
+        <div class="ft-left flex">
+            <div class="song-player flex">
 
                 <div class="album-cover">
                     <img src="img/sinister.jpeg" alt="album-cvr">
                 </div>
 
-                <div class="song-info">
+                <div class="song-info flex-col">
                     <span class="album-name span-little cl-wh">Sinister</span>
                     <a href="#"><span class="song-name cl-wh op-05 span-lt-little">Brano Nome</span></a>
                 </div>
@@ -126,8 +126,31 @@
             <i class="far fa-folder cl-wh op-05"></i>
         </div>
         
-        <div class="ft-center"></div>
-        <div class="ft-right"></div>
+        <div class="ft-center">
+
+            <div class="player-act">
+
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="far fa-play-circle"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo-alt"></i>
+
+            </div>
+
+            <div class="player-info flex">
+
+                <div class="player-progression">
+                    <div class="progression-bar"></div>
+                    <div class="progression-circle"></div>
+                </div>
+                        
+            </div>
+
+        </div>
+
+        
+        <div class="ft-right flex"></div>
 
     </footer>
     <!-- fine footer  -->

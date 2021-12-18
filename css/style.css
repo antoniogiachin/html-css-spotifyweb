@@ -6,8 +6,8 @@
 } 
 
 /* general */
-.flex{
-    display: inline-flex;
+.flex {
+    display: flex;
 }
 
 .flex-col{
@@ -79,7 +79,6 @@ aside{
 
     /* aside logo */
 aside .logo{
-    display: flex;
     height: 80px;
     margin-left: 15px;
 }
@@ -94,7 +93,6 @@ aside .actions{
 }   
 
 .act{
-    display: flex;
     align-items: center;
     gap: 10px;
     margin: 10px 0px;
@@ -143,8 +141,6 @@ aside .actions-btm{
     position: absolute;
     bottom: 0px;
     left: 15px;
-    display: flex;
-    flex-direction: column;
     align-content: center;
     justify-content: space-around;
     background-color: black;
@@ -167,7 +163,6 @@ aside .actions-btm .profile{
 }
 
 aside .actions-btm .act-btm{
-    display: flex;
     height: 10px;
     align-items: center;
     gap: 15px;
@@ -192,14 +187,12 @@ footer{
     background-color: cornflowerblue;
     position: fixed;
     bottom: 0;
-    display: flex;
 
 }
 
 footer .ft-left, footer .ft-right{
     width: 20%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 15px;
@@ -209,11 +202,12 @@ footer .ft-center{
     width: 60%;
     height: 100%;
     background-color: green;
+    line-height: 1.8em;
+    padding: 5px 0px;
 }
 
     /* ft-left */
 footer .ft-left .song-player{
-    display: flex;
     gap: 10px;
     align-items: center;
 }    
@@ -230,13 +224,65 @@ footer .ft-left .song-player .album-cover img{
 }
 
 footer .ft-left .song-player .song-info{
-    display: flex;
-    flex-direction: column;
     line-height: 15px;
     justify-content: center;
 }
 
+    /* ft-center */
+footer .ft-center .player-act{
+    color: #fff;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
 
+footer .ft-center .player-act .fa-play-circle{
+    font-size: 2em;
+}
+
+footer .ft-center .player-info{
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .ft-center .player-info::after{
+    content: "4:35";
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer .ft-center .player-info::before{
+    content: "0:25";
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer .ft-center .player-progression{
+    width: 75%;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #222;
+    position: relative;
+}
+
+footer .ft-center .player-progression .progression-bar{
+    width: 20%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #a3a3a3;
+}
+
+footer .ft-center .player-progression .progression-circle{
+    position: absolute;
+    top: -2px;
+    left: 19%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
 
 
 
