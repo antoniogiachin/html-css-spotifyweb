@@ -180,6 +180,33 @@ main{
     overflow-y: scroll;
 }
 
+    /* nav main */
+nav{
+    width: 100% ;
+    text-align: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    display: inline-block;
+    margin: 10px;
+    color: #a3a3a3;
+    padding: 0px 10px; 
+}
+
+nav ul li:first-child a::after{
+    border:1px solid green;
+    content: "";
+    width: 30%;
+    margin: auto;
+    display: block;
+}
+
+
+
 /* footer */
 footer{
     height: 80px;
