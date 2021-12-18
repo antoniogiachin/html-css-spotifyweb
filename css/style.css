@@ -51,6 +51,10 @@ a{
     margin: 30px 15px;
 }
 
+.mg-50-15{
+    margin: 50px 15px;
+}
+
 /* header */
 header{
     width: 85vw;
@@ -59,8 +63,10 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    background-color: brown;
     text-align: right;
+    background-color: #090B13;
+    opacity: 0.8;
+    z-index: 999;
 }
 
 header .upgrade{
@@ -184,8 +190,8 @@ aside .actions-btm .act-btm{
 main{
     width: 85vw;
     height: calc(100vh - 80px);
-    margin: 80px 0px;
-    background-color: darkcyan;
+    padding: 80px 0px 0px 0px;
+    background-color: #141922;
     position: fixed;
     top: 0;
     right: 0;
@@ -217,21 +223,38 @@ nav ul li:first-child a::after{
     display: block;
 }
 
-    /* main recent */
-#recent .row{
-    justify-content: space-between;
+    /* main generale */
+main .row{
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-#recent .row .row-album{
+main .row .row-album{
     flex-basis: 150px;
 }
 
-#recent .row .row-album .row-cover{
+main .row .row-album .row-cover{
     width: 12vw;
     height: 12vw;
     position: relative;
 }
+
+
+main .row .row-album .row-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s;
+}
+
+
+main .row .row-album .row-info{
+    align-items: center;  
+    text-align: center;
+    margin: 10px 0px;  
+}
+
+    /* main recent */
 
 #recent .row .row-album .row-cover .fa-play-circle{
     position: absolute;
@@ -247,22 +270,15 @@ nav ul li:first-child a::after{
     display: block;
 }
 
-#recent .row .row-album .row-cover img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: all 0.5s;
-}
-
 #recent .row .row-album .row-cover:hover img{
     opacity: 0.5;
 }
 
-#recent .row .row-album .row-info{
-    align-items: center;  
-    text-align: center;
-    margin: 10px 0px;  
+    /* main popular */
+#popular .row .row-album .row-cover img{
+    border-radius: 50%;
 }
+
 
 /* footer */
 footer{
@@ -373,19 +389,3 @@ footer .ft-right{
 }
 
 
-
-
-/* divs prove */
-.prova{
-    height: 500px;
-    width: 100%;
-    background-color: chartreuse;
-}
-
-.prova2{
-    background-color: chocolate;
-}
-
-.prova3{
-    background-color: darkgray;
-}
