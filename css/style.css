@@ -35,13 +35,25 @@ a{
     color: #fff;
 }
 
+.cl-a3{
+    color: #a3a3a3;
+}
+
 .op-05{
     opacity: 0.5;
 }
 
+.mg-30-0{
+    margin: 30px 0px;
+}
+
+.mg-30-15{
+    margin: 30px 15px;
+}
+
 /* header */
 header{
-    width: 80vw;
+    width: 85vw;
     height: 80px;
     line-height: 80px;
     position: fixed;
@@ -69,7 +81,7 @@ header .upgrade a{
 
 /* aside */
 aside{
-    width: 20vw;
+    width: 15vw;
     position: fixed;
     left: 0;
     top: 0;
@@ -170,7 +182,7 @@ aside .actions-btm .act-btm{
 }
 /* main */
 main{
-    width: 80vw;
+    width: 85vw;
     height: calc(100vh - 80px);
     margin: 80px 0px;
     background-color: darkcyan;
@@ -205,7 +217,52 @@ nav ul li:first-child a::after{
     display: block;
 }
 
+    /* main recent */
+#recent .row{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+#recent .row .row-album{
+    width: 12vw;
+}
+
+#recent .row .row-album .row-cover{
+    width: 12vw;
+    height: 12vw;
+    position: relative;
+}
+
+#recent .row .row-album .row-cover .fa-play-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 999;
+    font-size: 3em;
+    display: none;
+}
+
+#recent .row .row-album .row-cover:hover .fa-play-circle{
+    display: block;
+}
+
+#recent .row .row-album .row-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s;
+}
+
+#recent .row .row-album .row-cover:hover img{
+    opacity: 0.5;
+}
+
+#recent .row .row-album .row-info{
+    align-items: center;  
+    text-align: center;
+    margin: 10px 0px;  
+}
 
 /* footer */
 footer{
@@ -256,9 +313,7 @@ footer .ft-left .song-player .song-info{
 
     /* ft-center */
 footer .ft-center .player-act{
-    color: #fff;
     font-size: 1.2em;
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
@@ -313,7 +368,6 @@ footer .progression-circle{
     /* ft-left */
 footer .ft-right{
     font-size: 0.8em;
-    color: #fff;
     gap: 10px;
 }
 
