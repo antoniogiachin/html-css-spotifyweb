@@ -224,7 +224,7 @@ nav ul li:first-child a::after{
 }
 
 #recent .row .row-album{
-    width: 12vw;
+    flex-basis: 150px;
 }
 
 #recent .row .row-album .row-cover{
