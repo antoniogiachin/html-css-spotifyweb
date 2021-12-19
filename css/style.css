@@ -392,7 +392,7 @@ aside .actions a:hover img {
     filter:opacity(1);
 }
 
-aside .actions .wh-hov:hover, aside .playlist .wh-hov:hover, aside .playlist li:nth-child(2):hover span, aside .actions-btm .act-btm:hover span, footer .ft-left .wh-hov:hover{
+aside .actions .wh-hov:hover, aside .playlist .wh-hov:hover, aside .playlist li:nth-child(2):hover span, aside .actions-btm .act-btm:hover span, main .wh-hov:hover a, footer .ft-left .wh-hov:hover{
     color: #fff;
 }
 
