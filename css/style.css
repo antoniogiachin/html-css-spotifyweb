@@ -231,6 +231,7 @@ main .row{
 
 main .row .row-album{
     flex-basis: 150px;
+    align-items: center;
 }
 
 main .row .row-album .row-cover{
