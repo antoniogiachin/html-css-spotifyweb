@@ -267,14 +267,6 @@ main .row .row-album .row-info{
     display: none;
 }
 
-#recent .row .row-album .row-cover:hover .fa-play-circle{
-    display: block;
-}
-
-#recent .row .row-album .row-cover:hover img{
-    opacity: 0.5;
-}
-
     /* main popular */
 #popular .row .row-album .row-cover img{
     border-radius: 50%;
@@ -381,6 +373,7 @@ footer .progression-circle{
     height: 10px;
     border-radius: 50%;
     background-color: #fff;
+    display: none;
 }
 
     /* ft-left */
@@ -388,5 +381,48 @@ footer .ft-right{
     font-size: 0.8em;
     gap: 10px;
 }
+
+
+    /* hover */
+header .upgrade:hover{
+    transform: scale(1.1);
+}   
+
+aside .actions a:hover img {
+    filter:opacity(1);
+}
+
+aside .actions .wh-hov:hover, aside .playlist .wh-hov:hover, aside .playlist li:nth-child(2):hover span, aside .actions-btm .act-btm:hover span, footer .ft-left .wh-hov:hover{
+    color: #fff;
+}
+
+aside .playlist li:nth-child(2):hover .fas.fa-plus{
+    background-color: white;
+}
+
+#recent .row .row-album .row-cover:hover .fa-play-circle{
+    display: block;
+}
+
+#recent .row .row-album .row-cover:hover img{
+    opacity: 0.5;
+}
+
+footer .ft-left .song-player .song-info .song-name:hover{
+    text-decoration: underline;
+}
+
+footer .ft-center .player-act .far.fa-play-circle:hover{
+    transform: scale(1.1);
+}
+
+footer .ft-center .player-info .player-progression:hover .progression-circle, footer .ft-right .vl-rocker:hover .progression-circle{
+    display: block;
+}
+
+footer .ft-center .player-info .player-progression:hover .progression-bar, footer .ft-right .vl-rocker:hover .progression-bar{
+    background-color: green;
+}
+
 
 
