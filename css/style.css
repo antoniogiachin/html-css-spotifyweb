@@ -75,11 +75,16 @@ aside{
     /* aside logo */
 aside .logo{
     height: 80px;
+    min-height: 80px;
     margin-left: 15px;
+    width: 60%;
+    min-width: 120px;    
 }
 
 aside .logo img{
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;    
 }
 
 aside .logo-small{
@@ -463,7 +468,7 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
 @media screen and (max-width:768px) and (min-width:577px){
 
     aside{
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
     aside .actions-btm hr{
@@ -496,6 +501,11 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
     aside .logo{
         margin: 0;
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-width: 20px;
+        height: auto;
+        min-height: auto;
     }
 
     aside .logo .logo-big{
@@ -504,6 +514,9 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
 
     aside .logo .logo-small{
         display: block;
+        width: 30px;
+        height: 30px;
+        margin: 2px 0px;
     }
 
     aside .actions{
@@ -512,6 +525,11 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
 
     aside .actions .act{
         border: none;
+        padding: 0px 8px;
+    }
+
+    aside .actions .act span{
+        display: none;
     }
 
     aside .playlist{
