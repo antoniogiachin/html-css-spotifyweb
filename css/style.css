@@ -69,6 +69,7 @@ aside{
     top: 0;
     background-color: black;
     height: calc(100vh - 80px);
+    min-height: 300px;
 }
 
     /* aside logo */
@@ -79,6 +80,10 @@ aside .logo{
 
 aside .logo img{
     width: 50%;
+}
+
+aside .logo-small{
+    display: none;
 }
 
     /* aside actions */
@@ -441,7 +446,7 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
 /* versione md */ aaa
 
 /* versione md */
-@media screen and (max-width:992px) and (min-width:768px){
+@media screen and (max-width:992px) and (min-width:769px){
 
     main .row .row-album{
         flex-basis: 160px;
@@ -455,7 +460,7 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
 }
 
 /* versione s */
-@media screen and (max-width:768px) and (min-width:576px){
+@media screen and (max-width:768px) and (min-width:577px){
 
     aside{
         font-size: 0.7em;
@@ -477,6 +482,61 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
     footer .ft-left .song-actions{
         flex-direction: column;
         margin-left: 10px;
+    }
+
+}
+
+/* versione xs */
+@media screen and (max-width:576px) {
+    
+    aside{
+        width: 10%;
+    }
+
+    aside .logo{
+        margin: 0;
+        justify-content: center;
+    }
+
+    aside .logo .logo-big{
+        display: none;
+    }
+
+    aside .logo .logo-small{
+        display: block;
+    }
+
+    aside .actions{
+       margin:0;
+    }
+
+    aside .actions .act{
+        border: none;
+    }
+
+    aside .playlist{
+        display: none;
+    }
+
+    aside .actions-btm hr{
+        display: none;
+    }
+
+    aside .actions-btm {
+        left: 0;
+        align-items: center;
+    }
+
+    aside .actions-btm .act-btm span{
+        display: none;
+    }
+
+    .cta{
+        width: 90%;
+    }
+
+    main{
+        width: 90%;
     }
 
 }
