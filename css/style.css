@@ -322,6 +322,13 @@ footer .ft-left .song-player .song-info{
     justify-content: center;
 }
 
+footer .ft-left .song-actions {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 30%;
+    gap: 10px;
+}
+
     /* ft-center */
 footer .ft-center .player-act{
     font-size: 1.2em;
@@ -429,3 +436,44 @@ footer .ft-center .player-info .player-progression:hover .progression-bar, foote
 /* versione lg da min-width 992px a max-width 1199px */
 
 /* versione md */ aaa
+
+/* versione md */
+@media screen and (max-width:992px) and (min-width:768px){
+
+    main .row .row-album{
+        flex-basis: 160px;
+    }
+
+    main .row .row-album  .row-cover{
+        width: 15vw;
+        height: 15vw;
+    }
+
+}
+
+/* versione s */
+@media screen and (max-width:768px) and (min-width:576px){
+
+    aside{
+        font-size: 0.8em;
+    }
+
+    aside .actions-btm hr{
+        width: 90%;
+    }
+
+    main .row .row-album{
+        flex-basis: 40%;
+    }
+
+    main .row .row-album  .row-cover{
+        width: 30vw;
+        height: 30vw;
+    }
+
+    footer .ft-left .song-actions{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+}
