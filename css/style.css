@@ -58,9 +58,14 @@ aside .logo{
     width: 100%;
     padding: 10px 15px
 }
-aside .logo img{
+aside .logo .logo-big{
     width: 80%;
 }
+
+aside .logo .logo-small{
+    display: none;
+}
+
     /* aside actions */
 aside .actions{
     width: 100%;
@@ -163,13 +168,12 @@ main .album{
 
 main .album .album-img{
     width: 130px;
-    height: 130px;
+    
 }
 
 main .row-flex .album .album-img img{
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    
     transition: all 0.5s;
 }
 
@@ -439,13 +443,23 @@ footer #ft-center .player-info:hover .progression-bar, footer #ft-right .vl-rock
     background-color: green;
 }
 
+/* mediaquery */
+
 /* versione lg da min-width 992px a max-width 1199px */
 
-/* versione md */ aaa
 
 /* versione md */
 @media screen and (max-width:992px) and (min-width:769px){
 
+    /* md main */
+    main .album {
+        flex-basis: 145px;
+    }
+
+    main .album .album-img{
+        width: 145px;
+        
+    }
 
 
 }
@@ -453,6 +467,24 @@ footer #ft-center .player-info:hover .progression-bar, footer #ft-right .vl-rock
 /* versione s */
 @media screen and (max-width:768px) and (min-width:577px){
 
+    /* s aside */
+    aside{
+        font-size: 0.9em;
+    }
+
+    aside .logo .logo-big{
+        width: 65%;
+    }
+
+    /* s main */
+    main .album {
+        flex-basis: 40%;
+    }
+
+    main .album .album-img{
+        width: 100%;
+        
+    }
    
 
 }
@@ -460,6 +492,114 @@ footer #ft-center .player-info:hover .progression-bar, footer #ft-right .vl-rock
 /* versione xs */
 @media screen and (max-width:576px) {
     
-    
+    /* xs aside */
+    aside{
+        width: 50px;
+    }
 
+    aside .logo {
+        height: 60px;
+        min-height: 40px;
+        width: 100%;
+        padding: 12px;
+    }
+
+    aside .logo .logo-big{
+        display: none;
+    }
+
+    aside .logo .logo-small{
+        display: block;
+    }
+
+    aside .logo .logo-small{
+        transform: scale(1.5);
+    }
+
+    aside .actions .act-nav ul li{
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside .actions .act-nav ul li:first-child{
+        border: none;
+    }
+
+    aside .actions .act-nav ul li a{
+        justify-content: center;
+    }
+
+    aside .actions .act-nav img{
+        width: 65%;
+        margin: 0;
+    }
+
+    aside .actions .act-nav span{
+        display: none;
+    }
+
+    aside .actions .act-playlist{
+        display: none;
+    }
+
+    aside .actions-btm{
+        position: relative;
+        bottom: 10px;
+    }
+
+    aside .actions-btm ul{
+        position: absolute;
+        bottom: 0;
+    }
+
+    aside .actions-btm ul li{
+        padding: 0;
+    }
+
+    aside .actions-btm ul li hr{
+        display: none;
+    }
+
+    aside .actions-btm ul li a{
+        padding: 5px 10px;
+        justify-content: center;
+    }
+
+    aside .actions-btm ul li a span{
+        display: none;
+    }
+
+    aside .actions-btm img{
+        margin: 10px 0px;
+        width: 70%;
+    }
+
+    aside .actions-btm .profile img{
+        width: 100%;
+    }
+
+    /* xs main */
+    main, main .cta{
+        width: calc(100% - 50px);
+    }
+
+    main .album {
+        flex-basis: 45%;
+    }
+
+    main .album .album-img{
+        width: 100%;
+        
+    }
+
+    /* xs footer */
+    footer #ft-left, footer #ft-right{
+        width: 25%;
+    }
+
+    footer #ft-center{
+        width: 50%;
+        min-width: 0px;
+    }
 }
