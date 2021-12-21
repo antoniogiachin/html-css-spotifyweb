@@ -192,6 +192,7 @@ main .cta{
     min-width: 300px;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 main .cta button{
