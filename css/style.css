@@ -98,8 +98,23 @@ aside .actions .act-nav img{
 
 
 /* aside playlist */
-aside .actions .act-playlist{
+aside .actions .add-playlist{
     margin-top: 20px;
+    padding: 10px 25px;
+} 
+
+aside .actions .add-playlist .fas.fa-plus{
+    background-color: #a3a3a3;
+    padding: 10px;
+    color: black;
+    margin-right: 10px;
+}
+
+aside .actions .add-playlist a{
+    text-decoration: none;
+}
+
+aside .actions .act-playlist{
     overflow-y: auto;
 }
 
@@ -107,16 +122,12 @@ aside .actions .act-playlist ul li{
     padding: 10px 25px;
 }
 
-aside .act-playlist ul li .fas.fa-plus{
-    background-color: #a3a3a3;
-    padding: 10px;
-    color: black;
-    margin-right: 10px;
-}
 
+/* aside bottom */
 .actions-btm{
     width: 100%;
     height: 150px;
+    background-color: #000;
 }
 
 aside .actions-btm img{
@@ -372,17 +383,19 @@ aside .actions  .act-nav a:hover span{
     color: #fff;
 }
 
+aside .add-playlist a:hover span{
+    color: #fff;
+}
+
+aside .add-playlist a:hover .fas.fa-plus{
+    background-color: #fff;
+}
 aside .actions .act-playlist a:hover span{
     color: #fff;
 }
 
-aside .actions .act-playlist li:hover a{
+aside .actions .act-playlist li:hover a {
     color: #fff;
-}
-
-aside .actions .act-playlist li:hover i{
-    color: #000;
-    background-color: white;
 }
 
 aside .actions-btm ul li:hover:nth-child(1) span{
